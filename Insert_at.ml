@@ -4,5 +4,6 @@
 let insert_at n indexn list =
     let rec aux i = function
         | [] -> []
-        | h :: t -> if i = indexn than h = n else h :: aux(i + 1) t
-        | 
+        | h :: t -> if i = indexn then h::n::t else h :: aux(i + 1) t
+    in
+     aux 1 list;; 
